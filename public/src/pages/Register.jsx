@@ -43,7 +43,7 @@ function Register() {
             if(data.status === true){
                 localStorage.setItem('hit-me-up-user', JSON.stringify(data.user))
             }
-            navigate("/")
+            navigate("/chat")
         }
     }
 
