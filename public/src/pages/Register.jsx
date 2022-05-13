@@ -27,6 +27,11 @@ function Register() {
             theme:"dark"
          
     }
+    useEffect(()=>{
+      if(localStorage.getItem('hit-me-up-user')){
+        navigate('/chat')
+      }
+    },[])
     const handleSubmit = async(event)=>{
         event.preventDefault()
         if(handleValidation()){
